@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="../librarys/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../librarys/font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container my-3 py-3">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <h2 class="text-center">ENTER ROOM NUMBER</h2>
+                <form id="enterroom">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Room Number</label>
+                        <input type="text" class="form-control" id="roomid" name="roomid"
+                            placeholder="01934345343453453" />
+                    </div>
+                    <div id="idinput" class="form-group">
+                    <!-- <label for="exampleFormControlInput1">Name</label> -->
+                    <div class="form-check-inline">
+                        <label class="form-check-label mb-2">
+                            <input type="radio" id="name" class="form-check-input" name="personaldetails" checked>Name
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label mb-2">
+                            <input type="radio" id="uid" class="form-check-input" name="personaldetails">User Id
+                        </label>
+                    </div>
+                    <input type="text" class="form-control" id="userid" name="userid" placeholder="xyz abc" />
+                    </div>
+                    <button id="enterbtn" type="submit" class="btn btn-primary btn-lg btn-block align-middle"> 
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container my-3 py-3">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <h2 class="text-center">Admin Login</h2>
+                <form id="login" name="login" action="" method="POST">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="name@example.com" />
+                        <div class="invalid-feedback">Please choose a Email.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Password</label>
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Karm@beatsDogm@" />
+                        <div class="invalid-feedback">Please choose a Password.</div>
+                    </div>
+                    <input id="submitbtn" type="submit" class="btn btn-primary btn-lg btn-block" name="submitbtn" value="Submit" />
+                </form>
+                <div class="text-center mt-3">
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <footer class="fixed-bottom">
+        <div class="m-3 text-decoration-none"><a class="border border-primary p-2" href="userenterypage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> User</a></div>
+    </footer>
+    <script src="../librarys/jquery.min.js"></script>
+    <script src="../librarys/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../librarys/geturlparameter.js"></script>
+    <script src="../js/adminenterypage.js"></script>
+</body>
+
+</html>

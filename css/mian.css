@@ -1,0 +1,66 @@
+.mainbtnbody{
+  position: fixed;
+  margin: 0;
+  padding: 5px;
+  z-index: 999;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+
+.mainbtnposition{
+bottom: 30px;
+  right: 52px;
+}
+
+.mainbutton {
+  border-radius: 50%;
+  padding: 0px;
+  border: none;
+}
+
+/* div#mainbtnbody { border-radius: 0;}
+
+button#mainbutton{
+  position: relative;
+  z-index: -1;
+} */
+
+.mainbutton img {
+  width: 50px;
+}
+
+.close-part{
+  text-align: right;
+  padding: 2px 5px;
+}
+
+.chat-room-body {
+  width: 400px;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #dddddd;
+  background: #686767;
+}
+
+.chat-room-body iframe{
+  height: 97%;
+  width: 100%;
+}
+
+.notify-badge{
+  position: absolute;
+  font-weight: bolder;
+  font-size: 12px;
+  background:red;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color:white;
+  font-size: 10px;
+  top: 0px;
+  right: 0px;
+  padding: 2px 8px;
+}

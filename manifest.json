@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chat Bot",
+  "version": "0.1",
+  "browser_action": {
+    "default_title": "Chat Bot"
+  },
+  "permissions": ["tabs", "activeTab", "storage", "notifications", "alarms", "contextMenus"],
+  "background": {
+    "scripts": ["librarys/jquery.min.js", "js/background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/mian.css", "librarys/jquery-ui-1.12.1/jquery-ui.min.css", "librarys/bootstrap-4.3.1-dist/css/bootstrap.min.css"],
+      "js": ["librarys/jquery.min.js", "librarys/jquery-ui-1.12.1/jquery-ui.min.js", "librarys/bootstrap-4.3.1-dist/js/bootstrap.min.js", "js/content.js"]
+    }
+  ],
+  "web_accessible_resources": ["html/*", "js/*", "css/*", "assets/*", "librarys/*", "librarys/jquery-ui-1.12.1/*"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
